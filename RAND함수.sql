@@ -1,0 +1,3 @@
+-- RAND() : 난수 발생 함수
+-- ROUND함수는 3개의 인자가 필요하다.
+SELECT ROUND(RAND()*100,0) AS R1, ROUND(RAND()*100,0) AS R2, ROUND(RAND()*100,0) AS R3, ROUND(RAND()*100,0) AS R4, ROUND(RAND()*100,0) AS R5, ROUND(RAND()*100,0) AS R6  --난수 생성됨(0~1사이의 값)
