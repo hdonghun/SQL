@@ -1,2 +1,0 @@
-
-SELECT id,name,CATEGORY,PRICE FROM TOY where CATEGORY = 'Ultramn'
