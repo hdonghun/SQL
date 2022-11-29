@@ -105,6 +105,11 @@ group by bucket
 order by bucket
 )
 select * from temp_04;
+
+
+
+
+
 /************************************
 월별 사용자 평균 주문 건수 
 *************************************/
@@ -117,3 +122,9 @@ group by customer_id, date_trunc('month', order_date)::date
 select month_day, avg(order_cnt), max(order_cnt), min(order_cnt) -- , count(*)
 from temp_01 group by month_day
 order by month_day;
+
+
+
+select customer_id, date_trunc('month', order_date)::date as month_day, count(*) as order_cnt 
+from orders
+group by customer_id, date_trunc('month', order_date)::date;
